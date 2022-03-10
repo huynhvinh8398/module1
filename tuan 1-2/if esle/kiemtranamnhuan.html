@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var year =parseInt(prompt("nhập vào năm"));
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0){
+                    alert( year+ "day la nam nhuan");
+            } else {
+                alert( year+"khong phai nam nhuan");
+            } 
+        }else {
+                alert(year+ "day la nam nhuan" );
+            }
+        }else {
+                alert(  year+ "khong phai nam nhuan");
+            }
+
+    </script>
+</body>
+
+</html>
