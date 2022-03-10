@@ -10,30 +10,22 @@
 
 <body>
     <script>
-        switch (new Date().getDay()) {
-            case 0:
-                day = "chủ nhật";
+        var browser = prompt("nhap vao ten trinh duyet", '');
+        switch (browser) {
+            case 'Edge':
+                alert("you are got the Edge!");
                 break;
-            case 1:
-                day = "thứ 2";
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                alert('okay we support these browsers too');
                 break;
-            case 2:
-                day = "thứ 3";
-                break;
-            case 3:
-                day = "thứ 4";
-                break;
-            case 4:
-                day = "thứ 5";
-                break;
-            case 5:
-                day = "thứ 6";
-                break;
-            case 6:
-                day = "thứ 7";
-                break;
-                console.log(day);
+            default:
+                alert('We hope that this page looks ok!');
         }
+
+
     </script>
 </body>
 
