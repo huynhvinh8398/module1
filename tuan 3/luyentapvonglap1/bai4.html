@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+<body>
+    <p><b>Bài 4 </b>TÌm số đầu tiên trong dãy Finonaci chia hết cho 5</p>
+    <script>
+        var n1 = 0;
+        var n2 = 1;
+        var _resul = "0 1 ";
+        for(var i = 2 ; i < 20 ; i++) {
+        var tam = n2;
+        n2 = n1+n2;
+        if(n2%5==0){
+            console.log(`so dau tien chia het cho 5 ${n2}`);
+            break;
+        }
+        n1 = tam;
+        _resul = _resul + " " + n2 + " ";
+        }
+        console.log (_resul);
+        // bài 2: tính tổng các số chia hết cho 5 trong 20 số fibo đầu tiên
+        // <script>
+        // var n1 = 0;
+        // var n2 = 1;
+        // var _resul = "0 1 ";
+        // var total=0;
+        // for(var i = 2 ; i < 20 ; i++) {
+        // var tam = n2;
+        // n2 = n1+n2;
+        // if(n2%5==0){
+        //     console.log(`so dau tien chia het cho 5 ${n2}`);
+        //     total = total+n2;
+        // }
+        // n1 = tam;
+        // _resul = _resul + " " + n2 + " ";
+        // }
+        // console.log (_resul);
+        // console.log(`tong cac so chia het cho 5 ${n2}`);
+    </script>
+</body>
+</html>
