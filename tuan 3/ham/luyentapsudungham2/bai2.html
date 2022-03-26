@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Hàm tính diện tích, chu vi hình tròn</h3>
+    <script>
+        let radius_input = prompt("nhập bán kính");
+        function circle_area(radius) {
+            let area = (Math.pow(radius, 2) * 3.14);
+            return area;
+        }
+        function circle_perimeter(radius) {
+            let perimeter = 2 * radius * 3.14;
+            return perimeter;
+        }
+        
+
+        alert(`Với bán kính là ${radius_input} ta có diện tích hình tròn là ${circle_area(radius_input)} và chu vi hình tròn là ${circle_perimeter(radius_input)}`);
+    </script>
+</body>
+
+</html>
+
+</script>
+</body>
+
+</html>

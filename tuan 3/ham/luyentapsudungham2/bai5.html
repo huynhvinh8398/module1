@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <script>
+        let n1 = Number(prompt('Enter a number 1: '))
+        let n2 = Number(prompt('Enter a number 2: '))
+        let n3 = Number(prompt('Enter a number 3: '))
+        function checkNumber(n1, n2, n3) {
+            let arr = [n1, n2, n3]
+
+            return Math.min(...arr)
+        }
+
+
+        alert(checkNumber(n1, n2, n3))
+    </script>
+</body>
+
+</html>

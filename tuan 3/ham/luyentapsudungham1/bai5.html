@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 5</title>
+</head>
+
+<body>
+    <h3>bài 5</h3>
+    <script>
+        // let starr = prompt("nhập tên ngôi sao ");
+        // let star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        // let star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        // let stringg = document.forms['searchStar']["star1"].value;
+        // function star(value) {
+        //     for (let i = 0; i < star1.length; i++)
+        //         for (let j = 0; j < star2.length; j++) {
+        //             if (star1[i] == star2[j])
+        //                 document.write(star2[j]).value
+
+        //             return star2[j]
+
+        //         }
+
+        // }
+
+        // console.log(star().value); 
+        let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        function search_constellation(star_value) {
+            let i, flag = 0, index;;
+            for (i = 0; i < star.length; i++) {
+                if (star_value == star[i]) {
+                    flag = 1;
+                    index = i;
+                }
+            }
+            if (flag == 1) {
+                alert(`Ngôi sao ${star_value} thuộc chòm sao ${constellation[index]}`);
+            } else {
+                alert("Không tìm thấy ngôi sao");
+            }
+        }
+        let star_input = prompt("Nhập vào tên ngôi sao");
+
+        search_constellation(star_input);
+    </script>
+</body>
+
+</html>

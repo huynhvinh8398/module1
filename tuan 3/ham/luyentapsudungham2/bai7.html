@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 2</title>
+    <title>Bài 7</title>
 </head>
-
 <body>
-    <h3> Bài 2 đối số</h3>
     <script>
-        function doiso(i = 3) {
-            i++
-           document.write(i)
-        }
-        doiso();
+let n1 = prompt("nhập vào số đầu tiên")
+let n2 = prompt("nhập vào số thứ 2: ")
+function number(){
+    let temp = n1;
+    n1 = n2;
+    n2 = temp;
+    alert(`n1 = ${n1}, n2 = ${n2}`); 
+}
+number();
     </script>
 </body>
-
 </html>
