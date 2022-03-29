@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quản lí sản phẩm</title>
+</head>
+
+<body>
+
+    <button onclick="showProducts()">show Product</button><br>
+
+    <div id="idProducts"></div>
+    <script>
+        /*<label>samsung</label><br>
+    <label>nokia</label><br>
+    <label>sony</label><br>
+    <label>iphone</label><br>
+    <label>oppo</label><br>
+    <label>xiaomi</label><br>*/
+        let products = ['samsung', 'nokia', 'sony', 'iphone', 'oppo', 'xiaomi'];
+
+
+        function showProducts() {
+            let str = "";
+            for (let i = 0; i < products.length; i++) {
+                str += "<label>";
+                str += products[i];
+                str += "</label><br>";
+            }
+            let elementProducts = document.getElementById("idProducts");
+            elementProducts.innerHTML = str;
+        }
+
+    </script>
+</body>
+
+</html>
