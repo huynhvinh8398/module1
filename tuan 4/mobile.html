@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+</head>
+
+<body>
+    <script>
+
+        function Mobile(name, bat, mes, inboxs, sents, status) {
+            this.name = name;
+            this.battery = bat;
+            this.message = mes;
+            this.inboxs = inboxs;
+            this.sents = sents;
+            this.status = true;
+            this.checkstatus = function () {
+                return this.status;
+            }
+            this.turnOnOff = function (statusPhone) {
+                //  on/off or true/false
+                if (statusPhone == "ON") {
+                    this.status = true;
+                } else {
+                    this.status = false;
+                }
+            }
+            this.charge = function (numberBattery) {
+                this.battery = this.numberBattery + numberBattery;
+                if (this.battery >= 100) {
+                    this.battery = 100;
+
+                }
+            }
+            this.setMessage = function (text) {
+                this.message = text;
+            }
+            this.receiveMessage = function (Mobile, message) {
+                // this.inboxs['abc','deg'];
+                //  cập nhật inboxs cho đối tượng this
+                let count = this.inboxs.length;
+                this.inboxs[count] = message;
+                // cập nhật đã gửi cho mobie
+                let count1=Mobile.sents.length;
+                Mobile.sents[count1] =message;
+            }
+            this.viewInbox = function(){
+                for(let i=0; i<this.inboxs.length;i++){
+                    console.log(this.inboxs[i]);
+                }
+            }
+        }
+
+        let iphone = new Mobile("iphone",10,"hello you",[],[],false);
+        // // console.log(iphone.status); //false
+        // // iphone.turnOnOff("ON")
+        // // console.log(iphone.status); //true
+        //  iphone.charge(12)
+        //  console.log(iphone.battery)
+        let Nokia = new Mobile("nokia", 20, "this is nokia", [], [], false);
+        // console.log(Nokia.status);
+        Nokia.receiveMessage(iphone, "iphonexxx");
+        Nokia.receiveMessage(iphone, "iphonexxgx");
+        Nokia.receiveMessage(iphone, "iphonexdx");
+
+    </script>
+</body>
+
+</html>
