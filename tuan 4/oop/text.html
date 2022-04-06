@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p</title>
+</head>
+
+<body>
+    <script>
+        // giải phương trình bậc 1
+        // let a = parseInt (prompt("nhập vào số thứ nhất:"));
+        // let b = parseInt  (prompt("nhập vào số thứ 2:"));
+        //     function tong(a,b) {
+        //         if (a == 0 && b==0) {
+        //              alert("phương trình vô số nghiệm")
+        //         } else if (a == 0 && b!=0) {
+        //              alert("phương trình vô nghiệm")
+        //         }else {
+        //             let x = -b/a;
+        //              alert ("phương trình có nghiệm là x =" +x);
+        //         } 
+        //     }
+        //    console.log(tong(2,6));
+        //    arr.length
+        //  index:0>> length-1
+        //  viết hàm kiểm tra số 5 là vị trí bao nhiêu trong mảng
+        //  đầu vào là 5
+        // đầu ra là vị trí của 5 trong mảng
+        let arr = [2, 1, 5, 8, 9]
+        function vitri(number) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == number) {
+                    return i;
+                }
+            }
+        }
+        console.log(vitri(5));
+        
+    </script>
+</body>
+
+</html>
